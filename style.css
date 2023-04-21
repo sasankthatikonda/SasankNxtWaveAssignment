@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+/* base CSS Code  */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "Circular Std";
+  font-weight: 400;
+  src: url("../fonts/Circular-Std-Book.ttf") format("woff");
+}
+
+@font-face {
+  font-family: "Circular Std";
+  font-weight: 700;
+  src: url("../fonts/Circular-Std-Bold.ttf") format("woff");
+}
+
+html,
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Ubuntu", Sans-serif;
+  overflow-x: hidden;
+}
+
+h1,
+h2 {
+  margin: 0;
+  font-family: "Circular Std", Sans-serif;
+  font-weight: 700;
+}
+
+h3,
+h4,
+h5 {
+  margin: 0;
+  font-family: "Circular Std", Sans-serif;
+}
+
+p {
+  font-size: 1em;
+  line-height: 28px;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+a {
+  font-family: "Ubuntu", Sans-serif;
+  text-decoration: none;
+}
+
+a:visited,
+a:focus,
+a:active,
+a:hover {
+  text-decoration: none;
+  outline: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+.article {
+  position: relative;
+  z-index: 10;
+}
+
+/* Single Page CSS Style */
+body {
+  background-color: #e86b90;
+  /* height: 100vh; */
+  padding: 2em 0em;
+}
+
+#singlePageLayout .circle {
+  border: 3px solid #301282;
+  border-radius: 50%;
+  text-align: center;
+}
+
+#singlePageLayout .circle .main-icon {
+  font-size: 3em;
+  color: #301282;
+}
+
+#singlePageLayout .icon-heading {
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1;
+  padding: 0.7em;
+  color: #301282;
+}
+
+#singlePageLayout .horizontal-line {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid #301282;
+  text-align: end;
+  margin-left: 6em;
+  /* margin-top: 2.5em; */
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+#singlePageLayout .vertical-line {
+  border: 3px solid #301282;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 2em;
+}
+
+#singlePageLayout .main-heading {
+  font-family: "Roboto", sans-serif;
+  font-size: 3.5em;
+  font-weight: 600;
+  font-style: normal;
+  color: #301282;
+}
+
+#singlePageLayout .paragraph {
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  font-style: normal;
+
+  color: #301282;
+}
+
+#singlePageLayout .icon-background {
+  background-color: #301282;
+  border-radius: 50%;
+  width: 6em;
+  height: 6em;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  margin: 0em 1em;
+}
+
+.interests-icon {
+  font-size: 3em;
+  text-align: center;
+  color: #e86b90;
+}
+
+.dot {
+  background-color: #301282;
+  height: 1em;
+  width: 1em;
+  border-radius: 50%;
+  margin: 0.5em;
+}
+
+/* Responsive for Extra Extra Large Deveices(XXL) 1400 and above */
+@media (min-width: 1400px) {
+  #singlePageLayout .circle {
+    border: 3px solid #301282;
+    border-radius: 50%;
+    text-align: center;
+  }
+
+  #singlePageLayout .circle .main-icon {
+    font-size: 3em;
+    color: #301282;
+    padding: 10px;
+  }
+}
+
+/* Responsive For Extra Large(XL) and above*/
+@media (min-width: 1200px) and (max-width: 1400px) {
+  #singlePageLayout .circle .main-icon {
+    font-size: 2.5em;
+    color: #301282;
+    padding: 8px;
+    text-align: center;
+  }
+
+  #singlePageLayout .circle {
+    border: 3px solid #301282;
+    border-radius: 50%;
+    /* padding: 10px; */
+    text-align: center;
+  }
+}
+
+/* Responsive For Large Devices (lg) and above */
+@media (min-width: 991px) and(max-width:1200px) {
+  #singlePageLayout .circle .main-icon {
+    font-size: 3em;
+    color: #301282;
+    /* padding: 8px; */
+    text-align: center;
+  }
+
+  #singlePageLayout .circle {
+    border: 3px solid #301282;
+    border-radius: 100%;
+    /* padding: 10px; */
+    padding: 1em 0em;
+    text-align: center;
+  }
+}
+
+@media (min-width: 786px) and (max-width: 991px) {
+  #singlePageLayout .circle {
+    border: 3px solid #301282;
+    border-radius: 100%;
+    /* padding: 10px; */
+    padding: 1em 0em;
+    text-align: center;
+    width: 20% !important;
+  }
+
+  .icon-background {
+    height: 6em;
+    width: 6em;
+    margin: 0em 1em;
+  }
+
+  .interests-icon {
+    font-size: 2.5em;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .icon-background {
+    height: 4em;
+    width: 4em;
+    margin: 0em 0.5em;
+  }
+
+  .interests-icon {
+    font-size: 2.5em;
+  }
+}
